@@ -1,0 +1,13 @@
+#proyecto 1
+def opera ( a ,b ) :
+    while ( a != b ) :
+        if ( a > b ) :
+            a = a - b
+        else:
+            b = b - a
+    return a    
+
+#Programa principal
+a = int ( raw_input ( "ingrese a: " ) )
+b = int ( raw_input ( "ingrese b: " ) )
+print "Maximo comun divisor:", opera ( a ,b )

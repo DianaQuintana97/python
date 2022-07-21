@@ -1,0 +1,24 @@
+#Diana Quintana Gamboa
+#programa 2.4
+def may(a,n):
+    max=a[0]
+    i=1
+    while(i<n):
+        if(a[i]>max):
+            max=a[i]
+        i=i+1
+    return max 
+
+
+#programa principal
+print "Para dejar de ingresar numeros inserte 0"
+print "Dados n numeros encontrar el numero mayor "
+a=[]
+while True:
+    x=int(raw_input("Dame numero:"))
+    if(x>0):
+        a.append(x)
+        n=len(a) 
+    else:
+        break
+print "El mayor es:", may(a,n)
